@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 
+static NSString* const kValueKey = @"key";
+NSString * const defineNotification = @"defineNotification";
+
+
 @interface ViewController ()
 
 @end
@@ -17,6 +21,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    DateUtil* dateUtil = [[DateUtil alloc] init];
+    [dateUtil run];
+    NSLog(@"%@", defineNotification);
+
+
+    double (^speedFunction)(double) = ^(double speed) {
+        return 100*speed;
+    };
+
+
+
+    NSLog(@"%f", speedFunction(10));
+
+
+
 }
 
 

@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Testing-Swift.h"
+
+const int a = 10;
+extern NSString * const defineNotification;
+//typedef     double          (^SpeedFunction)(double);
 
 @interface ViewController : UIViewController
 
+@property (copy, nonatomic) NSString* title;
 
 @end
 

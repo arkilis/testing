@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#define PI 3.14
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSLog(@"%f", PI);
     return YES;
 }
 
